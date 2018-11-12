@@ -1,0 +1,712 @@
+@charset "UTF-8";
+/*～共通ここから～*/
+html {
+  font-size: 62.5%;
+  color:#333;
+  font-family:Helvetica,'Helvetica neue',Arial,'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+body {
+  width: 100%;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+#header {
+ margin: 0;
+ text-align: center;
+}
+#main {
+  overflow: hidden;
+}
+#footer {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  color:#fff;
+  font-size: 1.2rem;
+  background-color: #003366;
+  padding: 12px 0;
+}
+
+.footer-info {
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  background-color: #f3f3f3;
+  margin: auto;
+}
+.footer-infowrap {
+  overflow: hidden;
+  width:1000px;
+  margin: auto;
+  margin-top:40px;
+}
+.footer-infosyamei {
+  float: left;
+  margin-bottom:10px;
+}
+.footer-infoname {
+  font-size: 3.5rem;
+  margin-bottom: 5px;
+}
+.footer-infoplace , .footer-infotel {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.footer-infotitle{
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.footer-infoflex {
+  display:flex;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: #333;
+  }
+ .footer-infoflex li {
+   margin: 10px 20px;
+ }
+.footer-infoicon {
+  float: right;
+  text-align: right;
+  margin: auto;
+  padding: 20px 0;
+}
+h2{
+  font-size: 2.8rem;
+  text-align: left;
+  padding: 0.25em 0.5em;
+  background: transparent;
+  border-left: solid 10px #dab87a;
+  margin:40px 0 20px 0;
+  font-family: "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif;
+}
+/*ロゴとインフォここから*/
+
+h1 {
+  color: #333;
+  font-size: 1.4rem;
+  margin-left:10px;
+  margin-top: 20px;
+}
+#logo {
+  width: 1000px;
+  display: flex;
+/*  justify-content: space-between;←両端にそろえる*/
+  margin: auto;
+  margin-top: 20px;
+ }
+ #logo >:last-child {
+   margin-left:auto;
+ }
+#logo img {
+  width: 100px;
+  animation: fadeIn 5s ease 0s 1 normal;
+  -webkit-animation: fadeIn 5s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.header-info {
+  text-align: right;
+}
+.header-contacttel {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.header-contacttxt ,.header-contacttime{
+  font-size:1.3rem;
+}
+.header-contacttime {
+  margin-bottom: 10px;
+}
+
+.line{
+  background-color: #003366;
+  margin: 0;
+  padding: 5px;
+  font-size:1.2rem;
+}
+
+/*ロゴとインフォここまで*/
+.border {
+  position: relative;
+  box-shadow: 0 5px 3px -3px rgba(0,0,0,0.5);
+  padding: 5px;
+  z-index: 100;
+}
+/*グローバルナビここから*/
+#gloval-nav {
+  clear: both;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: #fff;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+}
+#gloval-nav ul {
+  margin-top: 0px;
+}
+#gloval-nav .nav-item {
+  display: inline-block;
+  margin: 0;
+  z-index: 1000;
+}
+.content-bukken {
+  border-bottom: 2px solid #ffcbf7;
+}
+.content-user {
+  border-bottom: 2px solid #83e3fb;
+}
+.content-company {
+  border-bottom: 2px solid #fff100;
+}
+.content-contact {
+  border-bottom: 2px solid #78dfb9;
+}
+#gloval-nav .nav-item a {
+  display: inline-block;
+  width: 230px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 1.8rem;
+
+}
+.nav-item  {
+  padding: 10px 0;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
+  color: #000;
+  font-size: 3rem;
+}
+#info {
+  float: right;
+}
+/*オンマウスメニューここから*/
+#gloval-nav li {
+  position: relative;
+  list-style: none;
+  z-index: 100;
+}
+#gloval-nav li a {
+  display: block;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  color: #333;
+  line-height: 1;
+  transition: 0.5s;
+}
+#gloval-nav ul {
+  background-color: #fff;
+}
+.onmouse:hover > a {
+  color: #333;
+  background: #f5deb3;
+}
+#gloval-nav li ul {
+  top: 60px;
+  position: absolute;
+}
+#gloval-nav .onmouse {
+  overflow: hidden;
+  height: 0;
+  transition: 0.2s;
+}
+#gloval-nav li:hover > ul > li {
+  overflow: visible;
+  height: 30px;
+}
+#gloval-nav li ul li ul {
+    top: 0px;
+    left: 230px;
+  }
+#gloval-nav li ul li ul:before {
+    position: absolute;
+    content: "";
+    left: 30px;
+  }
+#gloval-nav li ul li ul li:hover > a {
+    color: #333;
+    background: #f5deb3;
+  }
+/*オンマウスメニューここまで*/
+
+/*グローバルナビここまで*/
+/*～共通ここまで～*/
+
+/*トップここから*/
+#slide,#main {
+  display: block;
+  width: 1000px;
+  margin: auto;
+}
+#carousel {
+  background-color: #f0f0f0;
+  margin-bottom: 30px;
+}
+/*ピックアップ物件ここから*/
+.new {
+  margin-right: 15px;
+  margin-bottom:30px;
+  text-align: center;
+  width: 217px;
+  height: 270px;
+  display: inline-block;
+  border: 2px solid #003366;
+}
+#pickup {
+  clear: both;
+}
+#pickup img {
+  width: 170px;
+  margin: 10px;
+}
+.pickup-1,.pickup-2,.pickup-3{
+   font-size:1.5rem;
+   border-bottom: 1px solid #003366;
+   padding-bottom: 10px;
+   font-weight: bold;
+}
+#pickup p {
+  margin: 10px;
+  line-height: 20px;
+  font-size: 1.2rem;
+}
+.pu-price {
+  font-weight: bold;
+  color: #ee4d42;
+  font-size: 1.5rem;
+}
+/*ピックアップ物件ここまで*/
+#mainmenu {
+  float: left;
+}
+#news {
+  /*border: 1px solid #999;*/
+  margin: auto;
+  width: 650px;
+  overflow: hidden;
+  padding: 0px 12px 10px 0;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+.scroll-list {
+  max-height: 220px;
+  overflow-y: auto;
+  list-style-type: none;
+}
+.scroll-item-first{
+  display: block;
+  padding: 0 5px 10px 5px;
+}
+.scroll-item{
+  padding: 10px 5px 10px 5px;
+}
+.scroll-list {
+  display: block;
+
+}
+
+.scroll-item,.scroll-item-first {
+  border-bottom: 1px solid #333;
+}
+#search {
+  width: 700px;
+  overflow: hidden;
+}
+#erea {
+  float: left;
+}
+.ereabox {
+  width: 430px;
+  height: 300px;
+  background: #003366;
+  margin: 0 10px 70px 0;
+  position: relative;
+}
+#erea img {
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  margin: 0;
+}
+#erea p {
+  position: absolute;
+  font-size: 2rem;
+  color: #fff;
+  top:10px;
+  left:150px;
+  text-align: center;
+}
+#search-bottan {
+  float: right;
+  margin: 0;
+  height: 300px;
+}
+
+.search-item_pr, .search-item_st, .search-item_ot {
+  text-align: center;
+  border: 10px solid #003366;
+  padding: 25px 45px;
+  font-size: 2rem;
+}
+.search-item_pr, .search-item_st {
+  margin-bottom: 20px
+}
+#sidemenu {
+  float: right;
+  margin:0;
+}
+.side-firstimg {
+  margin-top: 45px;
+}
+.side-firstimgcm {
+  margin-top: 60px;
+}
+#sidemenu img {
+  margin-bottom: 20px;
+}
+.ereabox {
+  border: 5px solid #003366;
+}
+/*地図とかここから*/
+/*お問い合わせここから*/
+#contact {
+  width: 100%;
+  height: 500px;
+  clear: both;
+}
+.contact-comment {
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+}
+.contactform p {
+  font-size: 1.5rem;
+  margin: 20px 0 10px 0;
+}
+.contactform span {
+  color: red;
+  padding-left: 5px;
+}
+.contact-menu {
+  width: 1000px;
+  margin: auto;
+}
+/*#contact h2 {
+  padding-top: 40px;
+}*/
+.contactform {
+  width: 70%;
+  margin: 0;
+  float: left;
+}
+.formtel {
+  width: 30px;
+}
+.contactform input[type=text],
+.contactform textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+.contactform textarea {
+  height: 210px;
+}
+.contactform input[type=submit] {
+  display: block;
+  width: 200px;
+  margin:15px 0;
+  padding: 15px;
+  cursor:pointer;
+}
+.anounse {
+  font-size: 1.5rem;
+  margin-bottom: 70px;
+}
+/*トップここまで*/
+/*会社案内ここから*/
+.company {
+  width: 700px;
+  clear: both;
+  font-size: 1.5rem;
+}
+.company table {
+  width: 650px;
+  table-layout:auto;
+}
+.company-main, .company-sub{
+  float: left;
+}
+.company h3 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin: 20px 0 5px 0;
+}
+.company-sub {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.company table th{
+  width: 200px;
+}
+.company table td {
+  width: 500px;
+}
+.company table th,.company table td {
+  vertical-align: middle;
+  padding: 15px;
+  border: 1px solid #003366;
+}
+.company iframe {
+  margin: 20px 0;
+}
+/*会社案内ここまで*/
+/*社長挨拶ここから*/
+.syacho-ms {
+  width: 800px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 70px;
+}
+/*社長挨拶ここまで*/
+/*ログイン画面ここから*/
+.form-wrapper {
+  background: #f3f3f3;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 10px;
+  max-width: 400px;
+}
+.form-title {
+  text-align: center;
+  font-size: 2rem;
+  padding: 30px 0;
+}
+form {
+  padding: 0 1.5em;
+}
+.form-item {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+.form-item input {
+  background: #fafafa;
+  border: none;
+  border-bottom: 2px solid #e9e9e9;
+  color: #666;
+  font-size: 1em;
+  height: 50px;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+.form-item input:focus {
+  border-bottom: 2px solid #aaaaaa;
+  outline: none;
+}
+.button-panel {
+  margin: 20px auto;
+  width: 50%;
+}
+.button-panel .button {
+  background: #f16272;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+}
+.button:hover {
+  background: #ee3e52;
+}
+.form-footer {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.form-footer a {
+  color: #333;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  transition: border-color 0.3s;
+}
+.form-footer a:hover {
+  border-bottom: 1px dotted #333;
+}
+/*ログイン画面ここまで*/
+/*物件メニューここから*/
+.bukken-menu {
+  float: left;
+  display: inline-block;
+  width: 700px;
+  font-size: 1.6rem;
+}
+.bukken-menu h3 {
+  font-size: 2rem;
+  font-weight:bold;
+  margin:0 0 10px 0;
+  padding-top: 30px;
+}
+.bukken-menu p {
+  margin:20px 0;
+}
+.bukken-menu table {
+  width: 700px;
+}
+.bukken-menu table th{
+  width: 180px;
+}
+.bukken-menu table th,.bukken-menu table td {
+  vertical-align: middle;
+  padding: 10px;
+  border: 1px solid #003366;
+}
+.gototop {
+  text-align: right;
+  margin-bottom:20px;
+  border-bottom: 1px dotted #333;
+}
+.gototop-ls {
+  text-align: right;
+  margin-bottom:50px;
+}
+.price {
+  font-size: 3rem;
+  text-align: center;
+  color:#ee4d42;
+}
+.homename {
+  text-align: center;
+}
+/*メニューここまで*/
+/*準備中ここから*/
+.box {
+  width: 1000px;
+  height: 500px;
+  border-radius: 5px;
+  background: lighten(#f0f4c3, 10%);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+.wave {
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #f5bcb2;
+  width: 350px;
+  height: 350px;
+  margin-left: -180px;
+  margin-top: 20px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+}
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+}
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: .1;
+  background: yellow;
+}
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+.wave-title {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: #333;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+}
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+/*準備中ここまで*/
+/*上に戻るボタンここから*/
+#page-top {
+  display:none;
+  position:fixed;
+  right:10px;
+  bottom:50px;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+#move-page-top{
+  color:rgba(0,0,0,0.7);
+  text-decoration:none;
+  display:block;
+  cursor:pointer;
+}
+#move-page-top:hover{
+  color:rgba(0,0,0,0.7);
+}
+@media only screen and (min-width: 400px){
+  #page-top{
+    right:35%;
+    margin-right: -450px;
+  }
+/*上に戻るボタンここまで*/
+/*スマートフォン*/
+@media (max-width: 768px){
+  h1 {
+    font-size:1.0rem
+  }
+  #logo {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<title>【ひいらぎ不動産】駅から物件を探す</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/slick.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="screen">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script type="text/javascript">
+
+$(function() {
+    $('.slick-box').slick({
+			autoplay:true,
+			autoplaySpeed:5000,
+			dots:true,
+		});
+});
+
+$(function() {
+	var nav = $('#gloval-nav'),
+	offset = nav.offset();
+	$(window).scroll(function () {
+	  if($(window).scrollTop() > offset.top) {
+	    nav.addClass('fixed');
+	  } else {
+	    nav.removeClass('fixed');
+	  }
+	});
+});
+</script>
+</head>
+<body>
+  <header id="header">
+    <nav id="gloval-nav">
+    <div id="logo">
+        <a href="index.html"></i><img src="images/logo3.jpg" alt="ロゴ"></a>
+        <h1>ひいらぎ不動産の賃貸住宅、マンション検索サイト</h1>
+        <div class="header-info">
+        <div class="header-contacttxt">お気軽にご相談ください。</div>
+        <div class="header-contacttel"><i class="icon fas fa-phone"></i>03-1234-5678</div>
+        <div class="header-contacttime">【営業時間】午前９時から午後６時（土日祝は午後4時）</div>
+      </div>
+    </div>
+<p class="line"></p>
+      <li class="nav-item"><a href="#"><i class="icon fa fa-search"></i><span class="content-bukken">物件を探す</span></a>
+      <ul>
+        <li class="onmouse a1"><a href="search-erea.html">エリアから探す</a></li>
+        <li class="onmouse a1"><a href="search-station.html">駅から探す</a></li>
+        <li class="onmouse a1"><a href="#">その他から探す</a>
+          <ul>
+            <li class="onmouse a2"><a href="search-tintai.html">賃貸物件</a></li>
+            <li class="onmouse a2"><a href="search-mantion.html">マンション購入</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item"><a href="login.html" target="_blank"><i class="icon fa fa-home"></i><span class="content-user">入居者様専用</span></a></li>
+   
+    <li class="nav-item"><a href="#"><i class="icon fa fa-lightbulb"></i><span class="content-company">会社について</a>
+      <ul>
+          <li class="onmouse a1"><a href="company.html">会社概要</a></li>
+          <li class="onmouse a1"><a href="syacho.html">社長挨拶</a></li>
+    </ul>
+  </li>
+        <li class="nav-item"><a href="contact.html"><i class="icon fas fa-envelope"></i><span class="content-contact">お問い合わせ</a></span></li>
+        <p class="border"></p>
+  </nav>
+</header>
+
+<div id="main">
+  <h2>駅から探す</h2>
+<div class="home-point">
+  <div class="box">
+    <div class="wave -one"></div>
+    <div class="wave -two"></div>
+    <div class="wave -three"></div>
+    <div class="wave-title">ただいま準備中です。</div>
+  </div>
+
+</div>
+</div>
+<div class="footer-info">
+    <div class="footer-infowrap">
+    <p class="footer-infotitle">【サイトリンク】</p>
+<div class="footer-infoflex">
+    <ul>
+    <li><a href="index.html">＞ホーム</a></li>
+    </ul>
+    <ul>
+    <li>＞物件を検索する</a></li>
+    <li><a href="search-erea.html">　エリアから探す</a></li>
+    <li><a href="search-station.html">　駅から探す</a></li>
+    <li><a href="search-other.html">　その他から探す</a></li>
+    <li><a href="search-tintai.html">　賃貸物件</a></li>
+    <li><a href="search-mantion.html">　マンション</a></li>
+  </ul>
+  <ul>
+    <li><a href="login.html">＞入居者様専用</a></li>
+  </ul>
+  <ul>
+    <li><a href="company.html">＞会社概要</a></li>
+    <li><a href="syacho.html">　社長挨拶</a></li>
+  </ul>
+  <ul>
+    <li><a href="contact.html">＞お問い合わせ</a></li>
+    </ul>
+  </div>
+  <div class="footer-infosyamei">
+      <p class="footer-infoname">株式会社ひいらぎ不動産</p>
+      <p class="footer-infoplace">東京都江戸川区西小岩 X-X-X</p>
+      <p class="footer-infotel">TEL：03-1234-5678</p>
+        
+    </div>
+   <div class="footer-infoicon">
+        <a href="#"><i class="icon fab fa-twitter-square"></i></a><a href="#"><i class="icon fab fa-facebook-square"></i></a><a href="#"><i class="icon fab fa-instagram"></i></a>
+    </div>
+
+</div>
+
+</div>
+
+<footer id="footer">
+  <p id="copyright"><small>Copyright &copy;1973-2018 ひいらぎ不動産 All right reserved.</small></p>
+  <div id="page-top">
+  <a id="move-page-top"><i class="fa fa-chevron-circle-up fa-5x"></i></a>
+</div>
+<script>
+  $(window).scroll(function(){
+    var now = $(window).scrollTop();
+    if(now > 300){
+      $("#page-top").fadeIn("slow");
+    }else{
+      $("#page-top").fadeOut("slow");
+    }
+  });
+  $("#move-page-top").click(function(){
+    $("html,body").animate({scrollTop:0},"slow");
+  });
+</script>
+</footer>
+<script src="lib/placeholders.min.js"></script>
+</body>
+</html>

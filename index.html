@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="ひいらぎ不動産は、新宿区・杉並区・江戸川区・港区の不動産物件を扱っています。">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<title>【ひいらぎ不動産】新宿区・杉並区・江戸川区・港区の不動産物件検索サイト</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/slick.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="screen">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+    $('.slick-box').slick({
+			autoplay:true,
+			autoplaySpeed:5000,
+			dots:true,
+		});
+});
+
+$(function() {
+	var nav = $('#gloval-nav'),
+	offset = nav.offset();
+	$(window).scroll(function () {
+	  if($(window).scrollTop() > offset.top) {
+	    nav.addClass('fixed');
+	  } else {
+	    nav.removeClass('fixed');
+	  }
+	});
+});
+</script>
+</head>
+<body>
+  <header id="header">
+    <nav id="gloval-nav">
+    <div id="logo">
+        <a href="index.html"></i><img src="images/logo3.jpg" alt="ロゴ"></a>
+        <h1>ひいらぎ不動産の賃貸住宅、マンション検索サイト</h1>
+        <div class="header-info">
+        <div class="header-contacttxt">お気軽にご相談ください。</div>
+        <div class="header-contacttel"><i class="icon fas fa-phone"></i>03-1234-5678</div>
+        <div class="header-contacttime">【営業時間】午前９時から午後６時（土日祝は午後4時）</div>
+      </div>
+    </div>
+<p class="line"></p>
+      <li class="nav-item"><a href="#"><i class="icon fa fa-search"></i><span class="content-bukken">物件を探す</span></a>
+      <ul>
+        <li class="onmouse a1"><a href="#erea">エリアから探す</a></li>
+        <li class="onmouse a1"><a href="search-station.html">駅から探す</a></li>
+        <li class="onmouse a1"><a href="#">その他から探す</a>
+          <ul>
+            <li class="onmouse a2"><a href="search-tintai.html">賃貸物件</a></li>
+            <li class="onmouse a2"><a href="search-mantion.html">マンション購入</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item"><a href="login.html" target="_blank"><i class="icon fa fa-home"></i><span class="content-user">入居者様専用</span></a></li>
+   
+    <li class="nav-item"><a href="#"><i class="icon fa fa-lightbulb"></i><span class="content-company">会社について</a>
+      <ul>
+          <li class="onmouse a1"><a href="company.html">会社概要</a></li>
+          <li class="onmouse a1"><a href="syacho.html">社長挨拶</a></li>
+    </ul>
+  </li>
+        <li class="nav-item"><a href="contact.html"><i class="icon fas fa-envelope"></i><span class="content-contact">お問い合わせ</a></span></li>
+       <p class="border"></p>
+  </nav>
+</header>
+<div id="carousel">
+  <div id="slide">
+    <div class="slick-box">
+      <a href="#"><figure><img src="images/slide1.jpg" alt="メゾン江戸川"></figure></a>
+      <a href="#"><figure><img src="images/slide2.jpg" alt="電話"></figure></a>
+      <a href="#"><figure><img src="images/slide3.jpg" alt="新築マンション情報"></figure></a>
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div id="mainmenu">
+      <h2>お知らせ</h2>
+      <div id="news">
+        <ul class="scroll-list">
+          <li class="scroll-item-first"><img src="images/arrow.gif" alt="矢印">
+            <time class="date" datetime="2018-10-23">2018.10.23 TUE</time>
+            <span class="title">『港区』の物件情報を１件追加。</span></li>
+          <li class="scroll-item"><img src="images/arrow.gif" alt="矢印">
+            <time class="date" datetime="2018-10-10">2018.10.10 WED</time>
+            <span class="title">『杉並区』の物件情報を１件追加。</span></li>
+          <li class="scroll-item"><img src="images/arrow.gif" alt="矢印">
+            <time class="date" datetime="2018-10-01">2018.10.01 MON</time>
+            <span class="title">『江戸川区』の物件情報を１件追加。</span></li>
+        </ul>
+      </div>
+
+
+    <div id="pickup">
+      <h2>ピックアップ物件</h2>
+      <figure class="new"><a href="search-erea.html#edogawa"><img src="images/new1.jpg" alt="新着1"></a><figcaption class="pickup-1">イイ・ブッケン</figcaption><p>築１０年。1LDKの間取り。<br><span class="pu-price">５．５万</span>／管理費3,500円<br>敷金礼金：なし<br>
+        住所：江戸川区　XXX-X<br>駅から徒歩７分</p></figure>
+      <figure class="new"><a href="search-erea.html#suginami"><img src="images/new2.jpg" alt="新着2"></a><figcaption class="pickup-2">リッチ・ナカナカ</figcaption><p>築１２年。1LDKの間取り。<br><span class="pu-price">７万</span>／管理費3,500円<br>敷金礼金：一ヵ月分<br>
+        住所：杉並区　XXX-XX<br>駅から徒歩３分</p></figure>
+      <figure class="new"><a href="search-erea.html#sinjuku"><img src="images/new3.jpg" alt="新着3"></a><figcaption class="pickup-3">シンチク・ノイエ</figcaption><p>築１年。1LDKの間取り。<br><span class="pu-price">１０．２万</span>／管理費3,500円<br>敷金礼金：一か月分<br>
+        住所：新宿区　XX-X<br>駅から徒歩６分</p></figure>
+    </div>
+    <div id="search">
+      <h2>物件を検索する</h2>
+      <div id="erea">
+        <div class="ereabox"> <img src="images/erea.jpg" usemap="#Map" alt="地図">
+          <map name="Map">
+            <area shape="poly" coords="16,76,26,82,38,67,62,64,70,84,92,93,103,91,104,114,113,113,112,124,104,128,111,143,102,151,75,162,46,142,53,156,40,152,39,138,38,140,14,122,25,102,12,94,18,77,19,75,141,256" href="search-erea.html#suginami" alt="杉並区">
+            <area shape="poly" coords="123,60,116,81,122,83,135,97,129,117,134,136,152,125,166,135,166,149,181,133,192,132,192,118,209,105,204,91,189,91,175,86,159,86,159,69,135,70,124,61,129,109" href="search-erea.html#sinjuku" alt="新宿">
+            <area shape="poly" coords="172,135,169,145,158,155,168,171,178,170,179,185,172,190,170,203,180,203,191,222,219,218,222,212,226,179,234,179,234,168,226,161,225,152,205,148,190,131,173,135,178,190" href="search-erea.html#minato" alt="港区">
+            <area shape="poly" coords="358,29,368,42,354,48,346,88,330,83,322,76,306,80,314,94,305,106,325,112,321,171,326,191,337,196,354,194,367,186,376,167,377,136,398,130,411,106,404,91,387,69,392,46,374,28,360,29,273,8" href="search-erea.html#edogawa" alt="江戸川区">
+          </map>
+          <p>エリアから探す</p>
+        </div>
+      </div>
+      <div id="search-bottan">
+        <ul>
+          <li class="search-item_pr"><a href="search-station.html">駅から探す</a></li>
+          <li class="search-item_st"><a href="search-other.html">その他から探す</a></li>
+          <li class="search-item_ot"><a href="search-all.html">全ての物件</a></li>
+        </ul>
+      </div>
+    </div>
+ 		  </div>
+  <div id="sidemenu">
+    <a href="#"><img src="images/sidemenu1.jpg" alt="半額キャンペーン"></a><br>
+    <a href="#"><img src="images/sidemenu2.jpg" alt="相談会"></a><br>
+    <a href="#"><img src="images/sidemenu3.jpg" alt="よくある質問"></a>
+  </div>
+</div>
+
+
+<div class="footer-info">
+    <div class="footer-infowrap">
+    <p class="footer-infotitle">【サイトリンク】</p>
+<div class="footer-infoflex">
+    <ul>
+    <li><a href="index.html">＞ホーム</a></li>
+    </ul>
+    <ul>
+    <li>＞物件を検索する</a></li>
+    <li><a href="search-erea.html">　エリアから探す</a></li>
+    <li><a href="search-station.html">　駅から探す</a></li>
+    <li><a href="search-other.html">　その他から探す</a></li>
+    <li><a href="search-tintai.html">　賃貸物件</a></li>
+    <li><a href="search-mantion.html">　マンション</a></li>
+  </ul>
+  <ul>
+    <li><a href="login.html">＞入居者様専用</a></li>
+  </ul>
+  <ul>
+    <li><a href="company.html">＞会社概要</a></li>
+    <li><a href="syacho.html">　社長挨拶</a></li>
+  </ul>
+  <ul>
+    <li><a href="contact.html">＞お問い合わせ</a></li>
+    </ul>
+  </div>
+  <div class="footer-infosyamei">
+      <p class="footer-infoname">株式会社ひいらぎ不動産</p>
+      <p class="footer-infoplace">東京都江戸川区西小岩 X-X-X</p>
+      <p class="footer-infotel">TEL：03-1234-5678</p>
+        
+    </div>
+   <div class="footer-infoicon">
+        <a href="#"><i class="icon fab fa-twitter-square"></i></a><a href="#"><i class="icon fab fa-facebook-square"></i></a><a href="#"><i class="icon fab fa-instagram"></i></a>
+    </div>
+
+</div>
+
+</div>
+
+<footer id="footer">
+  
+  <p id="copyright"><small>Copyright &copy;1973-2018 ひいらぎ不動産 All right reserved.</small></p>
+  <div id="page-top">
+  <a id="move-page-top"><i class="fa fa-chevron-circle-up fa-5x"></i></a>
+</div>
+<script>
+  $(window).scroll(function(){
+    var now = $(window).scrollTop();
+    if(now > 300){
+      $("#page-top").fadeIn("slow");
+    }else{
+      $("#page-top").fadeOut("slow");
+    }
+  });
+  $("#move-page-top").click(function(){
+    $("html,body").animate({scrollTop:0},"slow");
+  });
+</script>
+</footer>
+<script src="lib/placeholders.min.js"></script>
+</body>
+</html>
